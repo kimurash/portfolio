@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "shunsei",
+  "license": "MIT",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1"
+  }
+}

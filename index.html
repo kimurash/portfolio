@@ -29,6 +29,16 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (
+      function(){
+        emailjs.init({ publicKey: "At1jeN20JgdZIoj7o" });
+      }
+    )();
+  </script>
 </head>
 
 <body class="index-page">
@@ -980,7 +990,6 @@
               </div>
             </div> <!-- End Portfolio Item -->
 
-            
             <div class="col portfolio-item isotope-item filter-app">
               <!-- Modal Trigger -->
               <div class="card portfolio-content" data-bs-toggle="modal" data-bs-target="#kitcc-lib-modal">
@@ -1691,9 +1700,9 @@
 
         <div class="row gy-4">
           <div class="col">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
+            <form action="" method="post" id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
+                <input type="hidden" name="contact_number" value="">
 
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
@@ -1739,8 +1748,7 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Shunsei Kimura</strong> <span>All Rights
-            Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Shunsei Kimura</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -1773,6 +1781,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/mail.js"></script>
 
 </body>
 
