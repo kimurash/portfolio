@@ -84,7 +84,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  /* font-family: var(--heading-font); */
 }
 
 /* PHP Email Form Messages
@@ -186,7 +186,7 @@ h6 {
 }
 
 .header .social-links a {
-  font-size: 16px;
+  font-size: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -512,7 +512,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -648,6 +648,15 @@ section,
   line-height: 0;
 }
 
+.about #profile-image{
+  transform: scale(0.9);
+}
+
+.about #profile-table{
+  /* width: 90%; */
+  max-width: 650px;
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -695,7 +704,6 @@ section,
   color: var(--heading-color);
   padding: 0;
   margin: 0 0 6px 0;
-  text-transform: uppercase;
   display: block;
   font-weight: 600;
   font-family: var(--heading-font);
@@ -718,6 +726,36 @@ section,
   background-color: var(--accent-color);
 }
 
+.skills .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills .card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skills .tag {
+  /* inline要素に余白を設定するため */
+  display: inline-block;
+  padding: 6px 16px;
+  margin-bottom: 3px;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s ease;
+  /* 幅を中身に合わせる */
+  width: fit-content;
+  /* 折り返さない */
+  white-space: nowrap;
+}
+
+.skills #skill-level-legend{
+  width: fit-content;
+}
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
@@ -736,7 +774,7 @@ section,
   position: relative;
 }
 
-.resume .resume-item h4 {
+.resume .resume-item h5 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -745,12 +783,12 @@ section,
   margin-bottom: 10px;
 }
 
-.resume .resume-item h5 {
+.resume .resume-item h4 {
   font-size: 16px;
-  padding: 5px 15px;
+  padding: 5px 0px;
   display: inline-block;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .resume .resume-item ul {
@@ -758,7 +796,7 @@ section,
 }
 
 .resume .resume-item ul li {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .resume .resume-item:last-child {
@@ -860,34 +898,44 @@ section,
   color: rgba(255, 255, 255, 0.8);
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link,
-.portfolio .portfolio-content .portfolio-info .details-link {
+.portfolio .portfolio-content .portfolio-info .detail-link {
   position: absolute;
-  left: calc(50% - 40px);
+  left: calc(50%);
   font-size: 26px;
-  top: calc(50% - 14px);
+  top: calc(50% - 40px);
   color: #fff;
   transition: 0.3s;
   line-height: 1.2;
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover {
+.portfolio .portfolio-content .portfolio-info .detail-link:hover {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info .details-link {
-  left: 50%;
-  font-size: 34px;
-  line-height: 0;
-}
-
 .portfolio .portfolio-content:hover .portfolio-info {
+  /* 値が大きいほど鮮明になる */
   opacity: 1;
 }
 
-.portfolio .portfolio-content:hover img {
-  transform: scale(1.1);
+.portfolio .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio .card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 使用技術のボタン */
+.portfolio .card-text button {
+  display: inline-block;
+  margin: 3px 1px;
+  pointer-events: none;
+}
+
+.btn-outline-indigo {
+  color: #6610f2; /* indigo color */
+  border-color: #6610f2;
 }
 
 /*--------------------------------------------------------------
