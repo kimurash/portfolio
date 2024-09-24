@@ -39,6 +39,9 @@
       }
     )();
   </script>
+
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body class="index-page">
@@ -1724,10 +1727,17 @@
                   <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
                 </div>
 
+                <div class="col-md-12 d-flex justify-content-center">
+                  <div class="g-recaptcha" data-sitekey="6LfBLU0qAAAAAAmRl2iaQOLFPiJzQ4TimPWE5mre"></div>
+                </div>
+
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">メールが送信されました！今しばらく返信をお待ちください。</div>
+                  <div class="error-message text-bg-danger mx-auto"></div>
+                  <div class="sent-message text-bg-success mx-auto">
+                    メールが送信されました。<br>
+                    後日ご連絡差し上げますので、しばらくお待ちください。
+                  </div>
 
                   <button type="submit">送信</button>
                 </div>
