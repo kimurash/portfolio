@@ -738,7 +738,7 @@ section,
   display: inline-block;
   padding: 6px 16px;
   margin-bottom: 3px;
-  border: none;
+  border: 1px solid silver;
   background-color: #f1f1f1;
   border-radius: 20px;
   font-size: 14px;
