@@ -937,6 +937,11 @@ section,
   border-color: #6610f2;
 }
 
+.btn-outline-orange {
+  color: #fd7e14; /* orange color */
+  border-color: #fd7e14;
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
