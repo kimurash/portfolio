@@ -942,6 +942,11 @@ section,
   border-color: #fd7e14;
 }
 
+.btn-outline-yellow-green{
+  color: #b9c42f; /* yellow-green color */
+  border-color: #b9c42f;
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
