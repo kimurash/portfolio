@@ -1256,6 +1256,76 @@
           </ul><!-- End Portfolio Filters -->
 
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-3 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col portfolio-item isotope-item filter-bot">
+              <!-- Modal Trigger -->
+              <div class="card portfolio-content" data-bs-toggle="modal" data-bs-target="#cis-lab-attd-report-modal">
+                <img src="assets/img/portfolio/slack-attd-report/ranking.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">CIS Lab Attendance Report</h5>
+
+                  <p class="card-text">
+                    <button type="button" class="btn btn-outline-primary">Python</button>
+                    <button type="button" class="btn btn-outline-secondary">AWS</button>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="cis-lab-attd-report-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <!-- header -->
+                    <div class="modal-header">
+                      <span class="fs-3 fw-medium lead">CIS Lab Attendance Report</span>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- body -->
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12 col-lg-5">
+                          <div id="cis-lab-attd-report-carousel" class="carousel slide border border-3">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/img/portfolio/slack-attd-report/ranking.png" class="d-block w-100" alt="">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cis-lab-attd-report-carousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cis-lab-attd-report-carousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7 mt-3">
+                          <p>
+                            毎月最終日に，その月に研究室へ出勤した回数をSlackに投稿するボットです．
+                            出勤した回数は，毎日自動で投稿されるメッセージに対するスタンプの数で集計しています．
+                          </p>
+                          <p>
+                            出勤回数を集計してSlackへ投稿するLambda関数を定義し，
+                            Amazon EventBridgeで毎月最終日に定期実行しています．
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onclick="window.open('https://github.com/kimurash/slack-attendance-report')"
+                      >
+                        GitHub
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- End Portfolio Item -->
+            
             <div class="col portfolio-item isotope-item">
               <!-- Modal Trigger -->
               <div class="card portfolio-content" data-bs-toggle="modal" data-bs-target="#portfolio-modal">
